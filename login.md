@@ -30,7 +30,7 @@
     	"username": "zhangsan01";
     	"name": "张三";
     	"phone": "13813431352";
-    	"birthday": "19870710"
+    	"birthday": "19870710";
     	"sex": "1";     # 1代表男，0代表女
     	"photo": "http://www.boguzhai.com/res/user/13813431352/photo.png";  # 图片url
 		"email": "zhangsan@126.com";         
