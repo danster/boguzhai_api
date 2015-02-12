@@ -29,4 +29,4 @@
 ###附一：移动端session id逻辑
 <br>
 
-![session id逻辑](res/sessionid_logic.png =650x500)
+<img src="res/sessionid_logic.png" width="650"></img> 
