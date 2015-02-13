@@ -26,7 +26,10 @@
 
 --- 
 
-###附一：移动端session id逻辑
-<br>
+###附一：移动端sessionid逻辑图
 
 <img src="res/sessionid_logic.png" width="650"></img> 
+
+###附二：sessionid时序图
+
+<img src="res/sessionid_time_logic.png" width="650"></img> 
