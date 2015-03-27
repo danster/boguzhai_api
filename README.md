@@ -11,7 +11,7 @@
 
 规范一：所有接口使用Markdown文档维护，Github更新
  
-规范二：Http Request 为了安全考虑采用POST方式，UTF-8编码，key=value形式参数, 图片和文件等经过base64编码字符串后POST
+规范二：Http Request 为了安全考虑采用POST方式，UTF-8编码，key=value形式参数, 图片和文件通过HTTP multipart/form-data请求协议上传
  
 规范三：Http Response 返回 json 数据格式信息，UTF-8编码，json数据中的数字尽量用字符串代替，如"20","20150109","30.00"等
  
