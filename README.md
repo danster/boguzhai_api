@@ -1,9 +1,7 @@
 # 博古斋移动接口开发文档
   
 **注：[所有接口的详细目录](接口目录.md)**  
-**注：[接口开发进度](接口进度.md)**  
-**注：[接口参考](接口参考.md)**   
-  
+**注：[接口开发进度](接口进度.md)**   
 **注：[接口调试记录](接口调试记录.md)**  
 
 
@@ -30,6 +28,64 @@
 - http://url?m=login&phone=13812345678&password=123456
 - http://url?m=resetpwd&sessionid=...&oldpwd=...&newpwd=...
 - http://url?m=search&auctionid=MT0112
+
+### 二、接口字段规范  
+
+```
+拍卖会状态(auctionMain status)    1:预展中 2:拍卖中 3:已结束 4:不限
+拍卖会拍卖类型(auctionMain type)   1:现场拍卖 2:同步拍卖 3:网络拍卖 4:不限
+
+专场状态(auctionSession status)   1:预展中 2:拍卖中 3:已结束 4:不限
+专场拍卖类型(auctionSession type)  1:现场拍卖 2:同步拍卖 3:网络拍卖 4:不限
+
+拍品状态(lot status)    1:预展中 2:拍卖中 3:已成交 4:流拍 5:不限
+拍品拍卖方式(bid type)   1:现场拍卖 2:同步拍卖 3:网络拍卖 4:不限
+拍品成交方式(deal type)  1:现场出价 2:网络出价 3:不限
+
+性别(sex)               1:男  0:女  -1:未知
+出价规则(bid rule)       1:二五八规则 2:固定加价 3:最小加价 4:不限
+
+```  
+
+### 三、接口模板
+
+Http Requset :  
+
+``` 
+m=login
+mobile=13812345678
+password=123456 
+```
+Http Response : 
+
+- code=0 : 登录成功，返回用户信息和seesionid
+- code=1 : 登录失败，无此用户名
+- code=2 : 登录失败，密码错误
+
+几种情况的返回json数据如下
+
+``` 
+{ 
+    "code": 0;
+    "data": {
+    	"sessionid": "1h283019400031n22hhu22313145252";
+    	"account":{
+			...   
+		}     
+	}
+}
+```
+``` 
+{ 
+    "code": 1;
+}
+```
+``` 
+{ 
+    "code": 2;
+}
+```
+
 
 --- 
 
