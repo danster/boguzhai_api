@@ -33,9 +33,11 @@
 
 ```
 拍卖会状态(auctionMain status)  "预展中": "进行中": "已结束":
-拍卖会拍卖类型(auctionMain type) "现场": "同步": "网络":
+拍卖会拍卖类型(auctionMain type) "同步": "网络":
 
-同步拍专场状态(auctionSession status)  "拍卖中" "已结束"
+同步专场状态(auctionSession status)  "未开拍" "已开拍" "已结束"
+网络专场状态(auctionSession status)  "未开拍" "已开拍" "已结束"
+
 专场拍卖类型(auctionSession type)  "中国书画" 之类
 
 拍品状态(deal type)  "成交": "已上拍": "未上拍": "流拍": "撤拍" 
