@@ -32,7 +32,7 @@
 ### 二、接口字段规范  
 
 ```
-拍卖会状态(auctionMain status)  "预展中": "进行中": "已结束":
+拍卖会状态(auctionMain status)  "预展中": "拍卖中": "已结束":
 拍卖会拍卖类型(auctionMain type) "同步": "网络":
 
 同步专场状态(auctionSession status)  "未开拍" "已开拍" "已结束"
