@@ -32,16 +32,16 @@
 ### 二、接口字段规范  
 
 ```
-拍卖会状态(auctionMain status)  "预展中": "拍卖中": "已结束":
-拍卖会拍卖类型(auctionMain type) "同步": "网络":
+拍卖会状态(auctionMain status)  "预展中" "拍卖中" "已结束"
+拍卖会拍卖类型(auctionMain type) "同步" "网络"
 
 同步专场状态(auctionSession status)  "未开拍" "已开拍" "已结束"
 网络专场状态(auctionSession status)  "未开拍" "已开拍" "已结束"
 
 专场拍卖类型(auctionSession type)  "中国书画" 之类
 
-拍品状态(deal type)  "成交": "已上拍": "未上拍": "流拍": "撤拍" 
-拍品成交方式(bid type)  "网络": "现场": 
+拍品状态(deal type)  "成交" "已上拍" "未上拍" "流拍" "撤拍" 
+拍品成交方式(bid type)  "网络" "现场" 
 
 性别(sex)               1:男  0:女  -1:未知
 出价规则(bid rule)       1:二五八规则 2:固定加价 3:最小加价 4:不限
