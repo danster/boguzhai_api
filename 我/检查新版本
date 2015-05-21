@@ -1,0 +1,21 @@
+###<a name="1">检查新版本</a>
+Http Request : 
+
+```
+m=checkVersion
+```
+Http Response:
+
+- code=0 : 获取信息成功
+- code=1 : 获取信息失败
+
+``` 
+{ 
+    "code": 0;
+    "data": {
+    	"versionCode": "2"; #版本号
+    	"description": "新增XXX功能,优化了XXX,修复了XXXBug";   #此版本的描述
+    	"url":  "xxx.apk" #新版本apk下载地址
+	}
+}
+```
